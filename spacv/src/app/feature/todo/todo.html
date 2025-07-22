@@ -1,0 +1,25 @@
+Your to do list user!
+<table>
+<th>Sl No.</th>
+<th>Notes</th>
+<th>Date</th>
+<th>Checked</th>
+<tr *ngFor="let data of listData" style="text-align: center;">
+    <td>{{data.id}}</td>
+    <td><input class="inputNote" [(ngModel)]="data.name" /></td>
+    <td>{{data.ndate}}</td>
+    <td title="Click here remove it" ><button (click)="toggleStrciThroughNoteClass()" [ngClass]="{'inputNote':isStrickThrough}">✔️</button></td>
+</tr>
+<!-- <tr>
+    <td>2</td>
+    <td style="text-decoration: line-through;">Updated articale</td>
+    <td>22/07/2025</td>
+    <td title="Click here add again it">❌</td>
+</tr>-->
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button title="Click here to add new entry" (click)="addListEntry()">Add New</button></td>
+</tr> 
+</table>
