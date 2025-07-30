@@ -6,6 +6,16 @@ table{
 .inputNote{
     text-decoration: line-through red;
 }
+.addBtn{
+    position:absolute;
+    right: 40px;
+    width: 110px;
+}
+.note{
+    width: 100%;  
+    padding-left: 20px;
+    padding-right: 20px;
+}
 th,td{
     background-color: bisque;
     border: 1px blueviolet;
